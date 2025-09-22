@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dundori VTC - Acquisition of Skills for Self-Reliance</title>
+    <meta name="description" content="Dundori Vocational Training Centre - Transforming lives through practical skills education. Engineering, Cosmetology, and more. Enroll today for a brighter future." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdundorivt2623back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container-max section-padding py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10 9 10s9-4.45 9-10V7l-10-5zM12 4.44L18.18 7.5l-6.18 3.09L5.82 7.5L12 4.44zM4 9.18l7 3.5v7.81c-3.21-.58-5.5-3.4-5.5-6.49V9.18zm9 11.31v-7.81l7-3.5V14c0 3.09-2.29 5.91-5.5 6.49z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-headline font-bold text-primary">Dundori VTC</h1>
+                        <p class="text-xs text-text-secondary">Skills for Self-Reliance</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-primary font-medium border-b-2 border-primary pb-1">Home</a>
+                    <a href="courses_overview.html" class="text-text-secondary hover:text-primary transition-quick">Courses</a>
+                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-quick">About Us</a>
+                    <a href="admissions.html" class="text-text-secondary hover:text-primary transition-quick">Admissions</a>
+                    <a href="course_catalogue.html" class="text-text-secondary hover:text-primary transition-quick">Catalogue</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-quick">Contact</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="admissions.html" class="btn-primary">Enroll Now</a>
+                    <a href="contact.html" class="btn-secondary">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden hidden mt-4 pb-4 border-t border-gray-200" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-primary font-medium">Home</a>
+                    <a href="courses_overview.html" class="text-text-secondary">Courses</a>
+                    <a href="about_us.html" class="text-text-secondary">About Us</a>
+                    <a href="admissions.html" class="text-text-secondary">Admissions</a>
+                    <a href="course_catalogue.html" class="text-text-secondary">Catalogue</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                    <div class="flex flex-col space-y-2 pt-4">
+                        <a href="admissions.html" class="btn-primary text-center">Enroll Now</a>
+                        <a href="contact.html" class="btn-secondary text-center">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)" class="text-primary"/>
+            </svg>
+        </div>
+
+        <div class="container-max section-padding relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-6xl font-headline font-bold text-text-primary leading-tight">
+                            Transform Your Future with 
+                            <span class="text-gradient-primary">Practical Skills</span>
+                        </h1>
+                        <p class="text-xl text-text-secondary font-body leading-relaxed">
+                            "Acquisition of skills for self-reliance" - Join Kenya's premier vocational training center and turn your potential into professional competence.
+                        </p>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary" id="graduates-counter">0</div>
+                            <div class="text-sm text-text-secondary">Graduates</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-secondary" id="employment-counter">0</div>
+                            <div class="text-sm text-text-secondary">Employment Rate</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent" id="years-counter">0</div>
+                            <div class="text-sm text-text-secondary">Years of Service</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="courses_overview.html" class="btn-primary text-center">Explore Courses</a>
+                        <a href="admissions.html" class="btn-accent text-center">Apply Today</a>
+                        <a href="contact.html" class="border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-smooth text-center">Schedule Visit</a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative">
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-custom-xl">
+                        <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Students learning practical skills at Dundori VTC" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092795442-8d6d8b7d7c8c?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <!-- Floating Achievement Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-custom-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-bold text-text-primary">Top Rated</div>
+                                <div class="text-sm text-text-secondary">VTC in Nakuru</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Course Finder -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Find Your Perfect Course
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Discover practical skills that lead to real careers. Filter by department, duration, and career outcomes.
+                </p>
+            </div>
+
+            <!-- Course Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="px-6 py-2 bg-primary text-white rounded-full font-medium course-filter active" data-filter="all">
+                    All Courses
+                </button>
+                <button class="px-6 py-2 bg-gray-100 text-text-secondary rounded-full font-medium course-filter hover:bg-primary hover:text-white transition-smooth" data-filter="engineering">
+                    Engineering
+                </button>
+                <button class="px-6 py-2 bg-gray-100 text-text-secondary rounded-full font-medium course-filter hover:bg-primary hover:text-white transition-smooth" data-filter="cosmetology">
+                    Cosmetology
+                </button>
+                <button class="px-6 py-2 bg-gray-100 text-text-secondary rounded-full font-medium course-filter hover:bg-primary hover:text-white transition-smooth" data-filter="business">
+                    Business
+                </button>
+            </div>
+
+            <!-- Course Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card 1 -->
+                <div class="card course-item" data-category="engineering">
+                    <div class="aspect-video rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.pixabay.com/photos/2017/08/10/08/47/welding-2619329_1280.jpg" alt="Welding and Fabrication Course" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-sm rounded-full">Engineering</span>
+                            <span class="text-sm text-text-secondary">6 Months</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold text-text-primary">Welding & Fabrication</h3>
+                        <p class="text-text-secondary">Master metal joining techniques and fabrication skills for construction and manufacturing industries.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <span class="text-secondary font-semibold">95% Employment Rate</span>
+                            <a href="courses_overview.html" class="text-primary font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="card course-item" data-category="cosmetology">
+                    <div class="aspect-video rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" alt="Hair and Beauty Course" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary text-sm rounded-full">Cosmetology</span>
+                            <span class="text-sm text-text-secondary">4 Months</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold text-text-primary">Hair & Beauty</h3>
+                        <p class="text-text-secondary">Comprehensive training in hair styling, makeup, and beauty treatments for salon and freelance work.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <span class="text-secondary font-semibold">92% Employment Rate</span>
+                            <a href="courses_overview.html" class="text-primary font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="card course-item" data-category="engineering">
+                    <div class="aspect-video rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.pixabay.com/photos/2010/12/13/10/09/car-2489_1280.jpg" alt="Automotive Mechanics Course" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-sm rounded-full">Engineering</span>
+                            <span class="text-sm text-text-secondary">8 Months</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold text-text-primary">Automotive Mechanics</h3>
+                        <p class="text-text-secondary">Complete vehicle maintenance and repair training covering engines, electrical systems, and diagnostics.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <span class="text-secondary font-semibold">98% Employment Rate</span>
+                            <a href="courses_overview.html" class="text-primary font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="card course-item" data-category="business">
+                    <div class="aspect-video rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Computer Applications Course" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-sm rounded-full">Business</span>
+                            <span class="text-sm text-text-secondary">3 Months</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold text-text-primary">Computer Applications</h3>
+                        <p class="text-text-secondary">Essential digital skills including Microsoft Office, internet usage, and basic programming concepts.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <span class="text-secondary font-semibold">90% Employment Rate</span>
+                            <a href="courses_overview.html" class="text-primary font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="card course-item" data-category="cosmetology">
+                    <div class="aspect-video rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=800&auto=format&fit=crop" alt="Fashion Design Course" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2017/08/01/11/48/woman-2564660_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary text-sm rounded-full">Cosmetology</span>
+                            <span class="text-sm text-text-secondary">6 Months</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold text-text-primary">Fashion Design</h3>
+                        <p class="text-text-secondary">Creative design and tailoring skills for the fashion industry, from concept to finished garment.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <span class="text-secondary font-semibold">88% Employment Rate</span>
+                            <a href="courses_overview.html" class="text-primary font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="card course-item" data-category="business">
+                    <div class="aspect-video rounded-lg overflow-hidden mb-4">
+                        <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Entrepreneurship Course" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-sm rounded-full">Business</span>
+                            <span class="text-sm text-text-secondary">2 Months</span>
+                        </div>
+                        <h3 class="text-xl font-headline font-semibold text-text-primary">Entrepreneurship</h3>
+                        <p class="text-text-secondary">Business planning, financial management, and marketing strategies for starting your own venture.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <span class="text-secondary font-semibold">85% Success Rate</span>
+                            <a href="courses_overview.html" class="text-primary font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="courses_overview.html" class="btn-primary">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Testimonials -->
+    <section class="section-padding bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Success Stories
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Real graduates, real careers, real transformation. See how our students turned skills into success.
+                </p>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="relative">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="card">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Grace Wanjiku - Automotive Graduate" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c6d4e6e8?q=80&w=200&auto=format&fit=crop'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-headline font-semibold text-text-primary">Grace Wanjiku</h4>
+                                <p class="text-sm text-text-secondary">Automotive Mechanics Graduate</p>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-xs bg-secondary-100 text-secondary px-2 py-1 rounded">Employed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            "Dundori VTC changed my life completely. I now run my own auto repair shop and employ 3 people. The practical training was exactly what I needed."
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-secondary font-medium">KES 45,000/month</span>
+                            <span class="text-text-secondary">Class of 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="card">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="James Mwangi - Welding Graduate" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-headline font-semibold text-text-primary">James Mwangi</h4>
+                                <p class="text-sm text-text-secondary">Welding & Fabrication Graduate</p>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-xs bg-secondary-100 text-secondary px-2 py-1 rounded">Employed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            "The instructors at Dundori VTC are industry experts. I got a job at a construction company immediately after graduation and was promoted within 6 months."
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-secondary font-medium">KES 38,000/month</span>
+                            <span class="text-text-secondary">Class of 2024</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="card">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="https://images.pixabay.com/photos/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Mary Njeri - Beauty Graduate" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-headline font-semibold text-text-primary">Mary Njeri</h4>
+                                <p class="text-sm text-text-secondary">Hair & Beauty Graduate</p>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Self-Employed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            "I opened my own salon 3 months after graduation. The business skills course helped me manage finances and attract customers. Now I have regular clients!"
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-secondary font-medium">KES 32,000/month</span>
+                            <span class="text-text-secondary">Class of 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Metrics -->
+            <div class="grid md:grid-cols-4 gap-8 mt-12 pt-12 border-t border-gray-200">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2" id="total-graduates">1,250+</div>
+                    <div class="text-text-secondary">Total Graduates</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-secondary mb-2">94%</div>
+                    <div class="text-text-secondary">Employment Rate</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-accent mb-2">KES 35K</div>
+                    <div class="text-text-secondary">Average Starting Salary</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">15</div>
+                    <div class="text-text-secondary">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Highlights -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Community Impact
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Building stronger communities through skilled professionals and local partnerships.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Community Content -->
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <!-- Impact Item 1 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Local Business Partnerships</h3>
+                                <p class="text-text-secondary">Over 150 local businesses actively recruit our graduates, creating a direct pipeline from classroom to career.</p>
+                            </div>
+                        </div>
+
+                        <!-- Impact Item 2 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.996 2.996 0 0 0 17.09 7H16c-.8 0-1.54.37-2.01.99L12 11l-1.99-3.01A2.99 2.99 0 0 0 8 7H6.91c-1.3 0-2.42.84-2.87 2.37L1.5 16H4v6h16z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Youth Empowerment</h3>
+                                <p class="text-text-secondary">Transforming young lives in Nakuru County by providing practical alternatives to traditional education pathways.</p>
+                            </div>
+                        </div>
+
+                        <!-- Impact Item 3 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Economic Development</h3>
+                                <p class="text-text-secondary">Our graduates contribute over KES 50 million annually to the local economy through employment and entrepreneurship.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="about_us.html" class="btn-primary text-center">Learn More About Us</a>
+                        <a href="contact.html" class="btn-secondary text-center">Partner With Us</a>
+                    </div>
+                </div>
+
+                <!-- Community Image -->
+                <div class="relative">
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-custom-xl">
+                        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=800&auto=format&fit=crop" alt="Community engagement and local partnerships" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <!-- Floating Stats -->
+                    <div class="absolute -top-6 -right-6 bg-white rounded-xl p-4 shadow-custom-lg">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-secondary">150+</div>
+                            <div class="text-sm text-text-secondary">Partner Businesses</div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-custom-lg">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent">KES 50M+</div>
+                            <div class="text-sm text-text-secondary">Economic Impact</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary">
+        <div class="container-max">
+            <div class="text-center text-white space-y-8">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold">
+                    Ready to Transform Your Future?
+                </h2>
+                <p class="text-xl opacity-90 max-w-2xl mx-auto">
+                    Join thousands of successful graduates who chose practical skills over traditional paths. Your journey to self-reliance starts here.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="admissions.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-smooth">
+                        Start Your Application
+                    </a>
+                    <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-smooth">
+                        Schedule Campus Visit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Footer Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10 9 10s9-4.45 9-10V7l-10-5zM12 4.44L18.18 7.5l-6.18 3.09L5.82 7.5L12 4.44zM4 9.18l7 3.5v7.81c-3.21-.58-5.5-3.4-5.5-6.49V9.18zm9 11.31v-7.81l7-3.5V14c0 3.09-2.29 5.91-5.5 6.49z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-headline font-bold">Dundori VTC</h3>
+                            <p class="text-sm text-gray-400">Skills for Self-Reliance</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">
+                        Transforming lives through practical skills education since 2010. Building careers, strengthening communities.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-headline font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="courses_overview.html" class="text-gray-400 hover:text-white transition-quick">Courses</a></li>
+                        <li><a href="admissions.html" class="text-gray-400 hover:text-white transition-quick">Admissions</a></li>
+                        <li><a href="about_us.html" class="text-gray-400 hover:text-white transition-quick">About Us</a></li>
+                        <li><a href="course_catalogue.html" class="text-gray-400 hover:text-white transition-quick">Course Catalogue</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="text-lg font-headline font-semibold mb-4">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="courses_overview.html" class="text-gray-400 hover:text-white transition-quick">Engineering</a></li>
+                        <li><a href="courses_overview.html" class="text-gray-400 hover:text-white transition-quick">Cosmetology</a></li>
+                        <li><a href="courses_overview.html" class="text-gray-400 hover:text-white transition-quick">Business Skills</a></li>
+                        <li><a href="courses_overview.html" class="text-gray-400 hover:text-white transition-quick">Computer Applications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-headline font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Dundori, Nakuru County</li>
+                        <li>+254 722453166 <span class="text-primary">OR</span>+254 701157046</li>
+                        <li>dundoriyouth18@gmail.com</li>
+                        <li>
+                            <a href="contact.html" class="text-primary hover:text-primary-400 transition-quick">
+                                Get Directions →
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Dundori Vocational Training Centre. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-quick">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-quick">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Animated Counters
+        function animateCounter(element, target, suffix = '') {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + suffix;
+            }, 20);
+        }
+
+        // Initialize counters when page loads
+        window.addEventListener('load', function() {
+            animateCounter(document.getElementById('graduates-counter'), 1250, '+');
+            animateCounter(document.getElementById('employment-counter'), 94, '%');
+            animateCounter(document.getElementById('years-counter'), 15, '+');
+        });
+
+        // Course Filter Functionality
+        const filterButtons = document.querySelectorAll('.course-filter');
+        const courseItems = document.querySelectorAll('.course-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-primary', 'text-white', 'active');
+                    btn.classList.add('bg-gray-100', 'text-text-secondary');
+                });
+                this.classList.remove('bg-gray-100', 'text-text-secondary');
+                this.classList.add('bg-primary', 'text-white', 'active');
+
+                // Filter courses
+                courseItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.classList.add('animate-fade-in');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
